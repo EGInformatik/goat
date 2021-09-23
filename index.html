@@ -1,19 +1,19 @@
 <h1>Verdens bedste FIFA22 spiller</h1>
-<button onclick="dosomething()">1</button>
+<button onclick="dosomething('https://www.fifauteam.com/images/fifa21/icons/AshleyCole/normal.png')">1</button>
+<button onclick="dosomething('https://berlingske.bmcdn.dk/media/cache/resolve/gallery_image/image/47/477901/6281990-1995.jpg')"></button>
 <body id="body">
 
 </body>
 
-<p>
+<p> 
     <img alt="" src="" 
         style="height: 85px; width: 198px" id="imgClickAndChange" onclick="changeImage()"  />
 </p>
 <script>
 
-function dosomething(){
+function dosomething(url){
     var img = document.createElement('img');
-            img.src = 
-'https://www.fifauteam.com/images/fifa21/icons/AshleyCole/normal.png';
+            img.src = url;
             document.getElementById('body').appendChild(img);
             down.innerHTML = "Image Element Added.";
 }
